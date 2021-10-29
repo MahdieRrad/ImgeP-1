@@ -1,7 +1,7 @@
 import cv2
 
-imge = cv2.imread('3.jpg',0)
-img = cv2.resize(imge,(500,600))
-imgH = cv2.rotate(img,cv2.ROTATE_180)
-cv2.imshow("Men",imgH)
+image = cv2.imread('3.jpg',0)
+Rimge = cv2.resize(image,(500,500))
+Rimge = Rimge[500::-1,500::-1]
+cv2.imshow('Men',Rimge)
 cv2.waitKey()
