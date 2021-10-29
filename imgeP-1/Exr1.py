@@ -2,8 +2,8 @@
 import cv2
 import numpy as NumPy
 
-imge = NumPy.arange(0, 360000, 1, NumPy.uint8)
-imge = NumPy.reshape(imge, (600, 600))
+imge = NumPy.arange(0, 640000, 1, NumPy.uint8)
+imge = NumPy.reshape(imge, (800, 800))
 Width,Height = imge.shape
 
 for i in range(0,Width,100):
